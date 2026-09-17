@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="gallery-header">
+    <h1>Interactive Image Gallery</h1>
+    <p>Explore high-quality images with filters and lightbox view</p>
+  </header>
+
+  <!-- Filter / Category Buttons -->
+  <div class="filter-container">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="architecture">Architecture</button>
+    <button class="filter-btn" data-category="animals">Animals</button>
+  </div>
+
+  <!-- Gallery Grid (10 Working Images) -->
+  <main class="gallery-grid" id="galleryGrid">
+    
+    <!-- Image 1 -->
+    <div class="gallery-item" data-category="nature" data-index="0">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Majestic Mountains">
+      <div class="overlay">
+        <h3>Majestic Mountains</h3>
+        <p>Nature</p>
+      </div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="gallery-item" data-category="architecture" data-index="1">
+      <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Modern Building">
+      <div class="overlay">
+        <h3>Modern Building</h3>
+        <p>Architecture</p>
+      </div>
+    </div>
+
+    <!-- Image 3 (Replaced Lion with Snow Leopard) -->
+    <div class="gallery-item" data-category="animals" data-index="2">
+      <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?auto=format&fit=crop&w=800&q=80" alt="Snow Leopard">
+      <div class="overlay">
+        <h3>Wild Leopard</h3>
+        <p>Animals</p>
+      </div>
+    </div>
+
+    <!-- Image 4 -->
+    <div class="gallery-item" data-category="nature" data-index="3">
+      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Deep Forest">
+      <div class="overlay">
+        <h3>Deep Forest</h3>
+        <p>Nature</p>
+      </div>
+    </div>
+
+    <!-- Image 5 -->
+    <div class="gallery-item" data-category="architecture" data-index="4">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="City Skyscraper">
+      <div class="overlay">
+        <h3>City Skyscraper</h3>
+        <p>Architecture</p>
+      </div>
+    </div>
+
+    <!-- Image 6 -->
+    <div class="gallery-item" data-category="animals" data-index="5">
+      <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=800&q=80" alt="Playful Fox">
+      <div class="overlay">
+        <h3>Playful Fox</h3>
+        <p>Animals</p>
+      </div>
+    </div>
+
+    <!-- Image 7 -->
+    <div class="gallery-item" data-category="nature" data-index="6">
+      <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Sunset Lake">
+      <div class="overlay">
+        <h3>Sunset Lake</h3>
+        <p>Nature</p>
+      </div>
+    </div>
+
+    <!-- Image 8 -->
+    <div class="gallery-item" data-category="architecture" data-index="7">
+      <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Luxury Villa">
+      <div class="overlay">
+        <h3>Luxury Villa</h3>
+        <p>Architecture</p>
+      </div>
+    </div>
+
+    <!-- Image 9 (Fixed Panda Image) -->
+    <div class="gallery-item" data-category="animals" data-index="8">
+      <img src="https://images.unsplash.com/photo-1527118732049-c88155f2107c?auto=format&fit=crop&w=800&q=80" alt="Giant Panda">
+      <div class="overlay">
+        <h3>Cute Panda</h3>
+        <p>Animals</p>
+      </div>
+    </div>
+
+    <!-- Image 10 -->
+    <div class="gallery-item" data-category="nature" data-index="9">
+      <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=800&q=80" alt="Tropical Waterfall">
+      <div class="overlay">
+        <h3>Tropical Waterfall</h3>
+        <p>Nature</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Modal Container -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+    
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Expanded View">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    
+    <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
