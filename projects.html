@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">My<span>Portfolio</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="page-container">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=600&auto=format&fit=crop&q=80" alt="ElectroMart E-Commerce App">
+                </div>
+                <div class="card-body">
+                    <h3>ElectroMart E-Commerce</h3>
+                    <p>A full-stack online retail store featuring dynamic product listing, cart management, user authorization, and PostgreSQL database.</p>
+                    <div class="tags">
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <button class="card-btn" onclick="openModal('ElectroMart E-Commerce', 'ElectroMart is a full-featured e-commerce platform. It provides dynamic product management, user registration/login, persistent cart system, checkout workflow, and administrative panel.', ['Django', 'PostgreSQL', 'HTML5', 'CSS3', 'JavaScript'])">View Details <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80" alt="Attendance Dashboard">
+                </div>
+                <div class="card-body">
+                    <h3>Student Attendance System</h3>
+                    <p>Responsive student portal for record validation, attendance tracking, and dynamic data tables rendering with custom filters.</p>
+                    <div class="tags">
+                        <span>Django</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <button class="card-btn" onclick="openModal('Student Attendance System', 'A responsive web dashboard designed for managing student attendance, validating duplicate roll numbers, rendering dynamic data tables, and generating automated reports.', ['Django', 'JavaScript', 'Bootstrap', 'PostgreSQL'])">View Details <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop&q=80" alt="MRI Classification">
+                </div>
+                <div class="card-body">
+                    <h3>MRI Medical Scan Classifier</h3>
+                    <p>Deep Learning computer vision web app built using TensorFlow and Flask dashboard to process and classify MRI scans.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Flask</span>
+                    </div>
+                    <button class="card-btn" onclick="openModal('MRI Scan Classifier', 'A computer vision deep learning system that utilizes Convolutional Neural Networks (CNN) with TensorFlow, Keras, and OpenCV to process brain MRI scans and display diagnostic results on a Flask web interface.', ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'Flask'])">View Details <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Project 4 (Hidden initially) -->
+            <div class="project-card hidden-project">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=600&auto=format&fit=crop&q=80" alt="Image Gallery App">
+                </div>
+                <div class="card-body">
+                    <h3>Interactive Image Gallery</h3>
+                    <p>A responsive image gallery application with modal lightbox views, dynamic category filters, and smooth grid layout animations.</p>
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS Grid</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <button class="card-btn" onclick="openModal('Interactive Image Gallery', 'A front-end web application showcasing image collection with category filtering, lightbox popup overlays, responsive CSS grid layout, and smooth animations.', ['HTML5', 'CSS Grid', 'JavaScript'])">View Details <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Project 5 (Hidden initially) -->
+            <div class="project-card hidden-project">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=600&auto=format&fit=crop&q=80" alt="Calculator App">
+                </div>
+                <div class="card-body">
+                    <h3>Web Calculator App</h3>
+                    <p>A clean mathematical calculator application supporting basic operations, keyboard events, backspace, and responsive UI theme.</p>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>CSS Flexbox</span>
+                        <span>HTML5</span>
+                    </div>
+                    <button class="card-btn" onclick="openModal('Web Calculator App', 'A functional web calculator built with Vanilla JavaScript. Supports standard mathematical calculations, keypress events, backspace functionality, and clean responsive user interface.', ['JavaScript', 'CSS Flexbox', 'HTML5'])">View Details <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- See More Button Container -->
+        <div class="see-more-container">
+            <button id="seeMoreBtn" class="btn btn-primary">
+                See More Projects <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </main>
+
+    <!-- Project Details Modal Popup -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">Project Title</h3>
+            <p id="modalDescription">Project details text here...</p>
+            <div class="modal-tags" id="modalTags"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // See More Functionality
+        document.getElementById('seeMoreBtn').addEventListener('click', function() {
+            const hiddenProjects = document.querySelectorAll('.hidden-project');
+            
+            hiddenProjects.forEach(project => {
+                project.classList.toggle('show-project');
+            });
+
+            if (this.innerText.includes('See More')) {
+                this.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+            } else {
+                this.innerHTML = 'See More Projects <i class="fas fa-chevron-down"></i>';
+            }
+        });
+
+        // Modal Box Functions
+        function openModal(title, description, tags) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            
+            const tagsContainer = document.getElementById('modalTags');
+            tagsContainer.innerHTML = '';
+            tags.forEach(tag => {
+                const span = document.createElement('span');
+                span.innerText = tag;
+                tagsContainer.appendChild(span);
+            });
+
+            document.getElementById('projectModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside content
+        window.onclick = function(event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

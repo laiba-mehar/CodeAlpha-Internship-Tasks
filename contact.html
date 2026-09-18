@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Port<span>folio</span></div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-container">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's work together!</h3>
+                <p>Feel free to reach out if you have a project idea, academic query, or collaboration offer.</p>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>laibamehar770@gemail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Pakistan</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <!-- Message Sent Success Alert (Default Hidden) -->
+                <div id="successAlert" class="success-alert" style="display: none;">
+                    <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.
+                </div>
+
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Form Submit Action Script -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Reload hone se rokta hai
+
+            const alertBox = document.getElementById('successAlert');
+            alertBox.style.display = 'flex'; // Alert Box Show karega
+
+            this.reset(); // Input fields clear karega
+
+            // 4 Seconds baad message automatically hide ho jaye ga
+            setTimeout(() => {
+                alertBox.style.display = 'none';
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
