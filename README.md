@@ -4,9 +4,9 @@
 
 | Task # | Task Name | Technologies | Source Code | Live Demo Link |
 | :--- | :--- | :--- | :--- | :--- |
-| **Task 1** | Interactive Image Gallery | HTML5, CSS3, JavaScript | [`/Task 1`](./Task 1) | [View Live Demo](https://laiba-mehar.github.io/Codealpha-Internship-Tasks/Task 1) |
-| **Task 2** | Calculator Application | HTML5, CSS3, JavaScript | [`/Task 2`](./Task 2) | [View Live Demo](https://laiba-mehar.github.io/Codealpha-Internship-Tasks/Task 2) |
-| **Task 3** | Personal Portfolio Website | HTML5, CSS3 | [`/Task-3-Portfolio`](./Task-3-Portfolio) | [View Live Demo](https://laiba-mehar.github.io/Codealpha-Internship-Tasks/Task-3-Portfolio/) |
+| **Task 1** | Interactive Image Gallery | HTML5, CSS3, JavaScript | [`/Task 1`](./Task%201) | [View Live Demo](https://laiba-mehar.github.io/CodeAlpha-Internship-Tasks/Task%201/) |
+| **Task 2** | Calculator Application | HTML5, CSS3, JavaScript | [`/Task 2`](./Task%202) | [View Live Demo](https://laiba-mehar.github.io/CodeAlpha-Internship-Tasks/Task%202/) |
+| **Task 3** | Personal Portfolio Website | HTML5, CSS3 | [`/Task 3`](./Task%203) | [View Live Demo](https://laiba-mehar.github.io/CodeAlpha-Internship-Tasks/Task%203/) |
 
 ## 🛠️ Key Features & Implementation
 
@@ -31,5 +31,5 @@
 ## 🚀 How to Run Locally
 
 1. Repository clone karein:
-   ```bash
-   git clone [https://github.com/laiba-mehar/CodeAlpha-Internship-Tasks.git](https://github.com/laibamehar/CodeAlpha-Internship-Tasks.git)
+   ```bash
+   git clone [https://github.com/laiba-mehar/CodeAlpha-Internship-Tasks.git](https://github.com/laiba-mehar/CodeAlpha-Internship-Tasks.git)
