@@ -1,5 +1,4 @@
 # Front-End Web Development Internship Tasks
-
 ## 📁 Projects & Tasks Overview
 
 | Task # | Task Name | Technologies | Source Code | Live Demo Link |
@@ -25,11 +24,6 @@
 - Built purely with semantic HTML5 and styled using modern CSS3.
 - Fully responsive layout for mobile, tablet, aur desktop screens.
 - Clean navigation bar and structured UI components.
-
----
-
 ## 🚀 How to Run Locally
-
-1. Repository clone karein:
    ```bash
    git clone [https://github.com/laiba-mehar/CodeAlpha-Internship-Tasks.git](https://github.com/laiba-mehar/CodeAlpha-Internship-Tasks.git)
